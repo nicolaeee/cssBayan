@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+
+body{
+    font-family: 'Popins', sans-serif;
+}
+
+.accordion{
+    background-color: black;
+    margin-top: 20px;
+    padding-top: 20px;
+    max-width: 25rem;
+    font-family: 'Popins', sans-serif;
+
+}
+
+.accordion__label,
+.accordion__content{
+    padding: 0.625rem 1.25rem;
+    color: red;
+}
+
+.accordion__label{
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+
+
+}
+.accordion__label:hover{
+    color: red;
+}
+
+
+.accordion__content {
+    background: #ffffff;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+  }
+
+  .accordion__input {
+    display: none;
+  }
+
+  .accordion__input:checked ~ .accordion__content {
+    display: block;
+
+  }
+  .accordion__input:hover ~ .accordion__content {
+    display: block;
+    color: red;
+  }
+
+
