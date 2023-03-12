@@ -39,7 +39,11 @@ body{
 }
 
 
-
+.accordion:hover{
+  transition: .2s all ease-in-out;
+    color: black;
+    display: block;
+}
 .accordion:hover ~ .parent-tab label img{
   max-height: 100vh;
 }
@@ -90,20 +94,13 @@ transition: 1.3s ease-in-out;
   }
 
   .accordion__label img{
-    opacity:  0;
+    max-height: 0;
     transition: all 3s ease-in-out;
   }
 
   input:checked~.accordion__label img {
-    opacity: 1;
+    max-height: 100vh;
     transform: rotate(-90deg);
-}
-@media (hover: hover){
-  .accordion:hover{
-    transition: .2s all ease-in-out;
-      color: black;
-      display: block;
-  }
 }
 
 @media (max-width:1920px){
@@ -135,7 +132,11 @@ transition: 1.3s ease-in-out;
 }
 
 
-
+.accordion:hover{
+  transition: .2s all ease-in-out;
+    color: black;
+    display: block;
+}
 .accordion:hover ~ .parent-tab label img{
   max-height: 100vh;
 }
