@@ -98,13 +98,6 @@ transition: 1.3s ease-in-out;
     opacity: 1;
     transform: rotate(-90deg);
 }
-@media (hover: hover){
-  .accordion:hover{
-    transition: .2s all ease-in-out;
-      color: black;
-      display: block;
-  }
-}
 
 @media (max-width:1920px){
   .accordion{
@@ -195,6 +188,13 @@ transition: 1.3s ease-in-out;
     max-height: 100vh;
     transform: rotate(-90deg);
 }
+}
+@media (hover: hover){
+  .accordion:hover{
+    transition: .2s all ease-in-out;
+      color: black;
+      display: block;
+  }
 }
 
 
